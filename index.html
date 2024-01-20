@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div id="weather" class="f-coding">
+      <span></span>
+      <span></span>
+    </div>
+    <h2 id="clock" class="f-coding">00:00:00</h2>
+    <form class="hidden" id="login-form">
+      <label for="name" class="f-coding">What is your name?</label><br />
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder=""
+        class="f-coding"
+      />
+      <button class="f-coding">Log In</button>
+    </form>
+
+    <div class="f-coding">
+      <h1 class="hidden" id="greeting"></h1>
+    </div>
+
+    <form id="todo-form">
+      <input
+        type="text"
+        placeholder="Write a To Do and Press Enter."
+        required
+        class="f-coding"
+      />
+    </form>
+
+    <!-- <div class="rect">
+      <div class="header">이곳을 드래그 하세요.</div>
+    </div> -->
+
+    <div class="rect" onmousedown="startDrag(event, this)">
+      <h3 class="f-coding">todo list</h3>
+      <ul id="todo-list" class="f-coding"></ul>
+    </div>
+
+    <div id="quote" class="f-coding">
+      <span id="quotes"></span><br />
+      <span id="author"></span>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js "></script>
+    <script src="js/todo.js "></script>
+    <script src="js/weather.js "></script>
+    <script src="js/drag.js "></script>
+  </body>
+</html>
