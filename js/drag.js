@@ -24,7 +24,7 @@ function onRemoveEvent() {
 
 function onMove(e) {
   // mousedown + mousemove가 함께 작동할 때 동작해야 함
-  // 이벤트 타겟은 움직이는 객체는 wrap이기때문에 좌표값을 구해서 wrap 객체 속성을 수정
+  // 이벤트 타겟 - 움직이는 객체는 wrap이기때문에 좌표값을 구해서 wrap 객체 속성을 수정
   // mousedown에서 (저장했던 client 좌표값) - (현재 client 좌표값)을 rect 객체 스타일 속성으로 추가
   e.preventDefault();
   lastX = startX - e.clientX;
